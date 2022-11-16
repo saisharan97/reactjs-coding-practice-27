@@ -1,0 +1,30 @@
+* {
+  color: black;
+}
+
+.home-container {
+  min-height: 90vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* align-items: center; */
+  /* background-image: url('https://assets.ccbp.in/frontend/react-js/home-lg-bg.png'); */
+  background-size: cover;
+  background-color: black;
+}
+
+.home-content {
+  width: 50vw;
+  display: flex;
+  margin-left: 10vw;
+  color: black;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.home-img-prop {
+  width: 40vw;
+  margin: 15px;
+}
