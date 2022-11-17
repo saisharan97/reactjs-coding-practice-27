@@ -1,5 +1,5 @@
 import {Component} from 'react'
-import {Redirect} from 'react-router-dom'
+// import {Redirect} from 'react-router-dom'
 
 import './index.css'
 import Cookies from 'js-cookie'
@@ -55,10 +55,10 @@ class Login extends Component {
   }
 
   render() {
-    const jwtToken = Cookies.get('jwt_token')
-    if (jwtToken !== undefined) {
-      return <Redirect to="/" />
-    }
+    // const jwtToken = Cookies.get('jwt_token')
+    // if (jwtToken !== undefined) {
+    //   return <Redirect to="/" />
+    // }
 
     const {username, password, isWarningTextVisible, errorMessage} = this.state
 

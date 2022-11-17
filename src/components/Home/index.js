@@ -1,5 +1,5 @@
-import Cookies from 'js-cookie'
-import {Link, Redirect} from 'react-router-dom'
+// import Cookies from 'js-cookie'
+import {Link} from 'react-router-dom'
 
 import {Component} from 'react'
 import './index.css'
@@ -7,11 +7,11 @@ import Header from '../Header/index'
 
 class Home extends Component {
   render() {
-    const jwtToken = Cookies.get('jwt_token')
-    console.log(jwtToken)
-    if (jwtToken === undefined) {
-      return <Redirect to="/login" />
-    }
+    // const jwtToken = Cookies.get('jwt_token')
+    // console.log(jwtToken)
+    // if (jwtToken === undefined) {
+    //   return <Redirect to="/login" />
+    // }
     return (
       <div className="home-container">
         <Header />
