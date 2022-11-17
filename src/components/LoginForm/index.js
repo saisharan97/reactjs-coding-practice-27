@@ -1,8 +1,5 @@
 import {Component} from 'react'
-// import {Redirect} from 'react-router-dom'
-
 import './index.css'
-import Cookies from 'js-cookie'
 
 class Login extends Component {
   state = {
@@ -20,13 +17,8 @@ class Login extends Component {
     this.setState({password: event.target.value})
   }
 
-  onSuccessOfLogin = jwtToken => {
+  onSuccessOfLogin = () => {
     const {history} = this.props
-    // console.log(jwtToken)
-
-    Cookies.set('jwt_token', jwtToken, {expires: 30})
-
-    // console.log('Login Success')
     history.replace('/')
   }
 
@@ -55,11 +47,6 @@ class Login extends Component {
   }
 
   render() {
-    // const jwtToken = Cookies.get('jwt_token')
-    // if (jwtToken !== undefined) {
-    //   return <Redirect to="/" />
-    // }
-
     const {username, password, isWarningTextVisible, errorMessage} = this.state
 
     return (

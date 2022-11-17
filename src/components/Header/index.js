@@ -1,15 +1,11 @@
 import {Link, withRouter} from 'react-router-dom'
 import {Component} from 'react'
 import './index.css'
-// import Cookies from 'js-cookie'
 
 class Header extends Component {
   onclickLogoutButton = () => {
     const {history} = this.props
-    // const jwtToken = Cookies.get('jwt_token')
-    // Cookies.remove('jwt_token')
     history.replace('/login')
-    console.log('Sai')
   }
 
   render() {
